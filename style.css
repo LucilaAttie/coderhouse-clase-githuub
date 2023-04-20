@@ -1,0 +1,61 @@
+/* Sintaxis
+
+selector {
+    propiedad: valor;
+}
+
+*/
+
+/* Reseteo de atributos default */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: rgb(226, 43, 177);
+}
+
+p {
+    color: rgb(157, 98, 115);
+    text-align: left;
+    /* text-decoration: underline; */
+    /* cursor: pointer; -> manito sobre los links */
+    font-size: 20px;
+}
+
+/* el . antes es para llamar class */
+.pie {
+    color: blue;
+}
+
+/* el # antes es para llamar id */
+#parrafo {
+    background-color: aqua;
+}
+
+#pie-de-pag {
+    background-color: aquamarine;
+    width: 50%;
+}
+
+/* unidades de medida
+-rem: relativa al elemento root (medida gral que nos da el navegador: 16px)
+-em: relativa al elemento html o root que son definidos por nosotros mismos. hay que definirlo en px en un html {}
+
+los parrafos-titulos-enlaces suelen usar px
+lo multimedia duele usar %, vh, vw
+las propiedades de la caja, margin y padding suelen usar rem o em
+*/
+
+a {
+    font-size: 2rem;
+}
+
+body {
+    background-image: url('/images/logo_coderhouse.png');
+    background-size: cover;
+    /* background-position: center; --> me sigue cuando e\scrolleo */
+   /*  background-attachment: fixed; --> queda fija arriba. bkg paralax */
+}
